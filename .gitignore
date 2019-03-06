@@ -61,4 +61,4 @@ typings/
 .next
 
 # ts cache files
-.rts2_cache_*
+.rpt2_cache
