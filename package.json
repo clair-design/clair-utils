@@ -1,21 +1,26 @@
 {
-  "name": "clair-utils",
-  "version": "0.1.0",
+  "name": "@clair-design/clair-utils",
+  "version": "0.0.0-development",
   "description": "common utils for clair-design",
   "main": "dist/clair-utils.js",
   "module": "dist/clair-utils.mjs",
   "source": "src/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "commit": "npx git-cz",
     "build": "rm -rf dist && rollup -c rollup.config.js",
     "dev": "rollup -c rollup.config.js -w",
     "format": "pretty-quick --pattern \"**/*.*(ts|tsx)\"",
-    "test": "jest"
+    "test": "jest",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clair-design/clair-utils.git"
+    "url": "https://github.com/clair-design/clair-utils.git"
   },
   "author": "wemlion <angusfu1126@qq.com>",
   "license": "MIT",
@@ -43,6 +48,7 @@
     "pretty-quick": "^1.10.0",
     "rollup": "^1.4.1",
     "rollup-plugin-typescript2": "^0.19.3",
+    "semantic-release": "^15.13.3",
     "standard-version": "^5.0.1",
     "typescript": "^3.3.3333"
   },

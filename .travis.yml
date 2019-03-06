@@ -1,0 +1,31 @@
+language: node_js
+
+cache:
+  directories:
+    - ~/.npm
+
+notifications:
+  email: false
+
+node_js:
+  - '10'
+
+# S: Build Lifecycle
+install:
+  - ./scripts/install.sh
+before_script:
+  - echo "start"
+script:
+  - npm run format
+  - npm run test
+  - rm -rf dist
+  - npm run build
+after_script:
+  - echo "done"
+# E: Build LifeCycle
+
+after_success:
+  - test $TRAVIS_PULL_REQUEST = "false" && npx travis-deploy-once "npx semantic-release"
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/

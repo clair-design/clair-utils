@@ -62,3 +62,5 @@ typings/
 
 # ts cache files
 .rpt2_cache
+
+dist/
