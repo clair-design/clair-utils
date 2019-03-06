@@ -5,7 +5,7 @@ type NumberOrString = number | string
 /** 用于模态框组件中管理 body 的 overflow */
 class OverflowController {
   /** 记录状态 */
-  private stack: NumberOrString[] = []
+  stack: NumberOrString[] = []
   private oldOverflowVal: string | null = ''
   private oldPaddingRightVal: string | null = ''
 
@@ -35,6 +35,7 @@ class OverflowController {
     // always make `body` hidden when modal shown
     style.overflow = 'hidden'
   }
+
   /** @param uid 每个模态框的唯一标识符 */
   exit(uid: NumberOrString) {
     // 已出栈

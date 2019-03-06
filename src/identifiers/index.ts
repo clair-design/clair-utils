@@ -1,1 +1,1 @@
-export { autoIncreamentId, AutoIncreasingCounter } from './auto-increament'
+export { AutoIncreasingCounter } from './auto-increament'

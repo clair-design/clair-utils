@@ -16,12 +16,3 @@ export class AutoIncreasingCounter {
     return this.val
   }
 }
-
-const counter = new AutoIncreasingCounter(0)
-
-/**
- * 从 1 开始自增 ID
- */
-export function autoIncreamentId() {
-  return counter.next()
-}
