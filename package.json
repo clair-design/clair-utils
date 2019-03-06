@@ -1,6 +1,6 @@
 {
   "name": "@clair-design/clair-utils",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "common utils for clair-design",
   "main": "dist/clair-utils.js",
   "module": "dist/clair-utils.mjs",
