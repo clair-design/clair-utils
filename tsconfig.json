@@ -4,7 +4,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "es2015",
-    "lib": ["dom", "es2018"],
+    "lib": ["dom", "es2015"],
     "allowJs": false,
     "declaration": true,
     "declarationMap": false,
