@@ -1,10 +1,6 @@
 {
   "prepare": [
     "@semantic-release/changelog",
-    {
-      "path": "@semantic-release/exec",
-      "cmd": "./scripts/write-version.sh ${nextRelease.version}"
-    },
     "@semantic-release/npm",
     {
       "path": "@semantic-release/git",
